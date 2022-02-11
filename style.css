@@ -60,11 +60,9 @@ button:hover {
   background: url(./crypto.png);
   background-position: center;
   background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  min-height: 100vh;
   color: #babecc;
   background-color: rgb(54, 2, 122);
+  min-height: 100vh;
 }
 
 #CalcNavbar {
@@ -122,4 +120,25 @@ button:hover {
   width: 90%;
   border-radius: 0.5rem;
   padding: 0.5rem 0.3rem;
+}
+
+@media only screen and (max-width: 850px) {
+  #CalcNavbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .switches{
+    flex-direction: row;
+  }
+  .switches button {
+    margin: 0.5rem;
+    padding: 0.4rem 1rem;
+  }
+  .Calcmain {
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+  }
+  .CalcBox {
+    margin: 4% 0%;
+  }
 }
