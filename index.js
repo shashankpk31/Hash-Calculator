@@ -44,13 +44,15 @@ const calXOR = (a, b) => {
 
 const calcSimpleHash = (messageBit, divBlockBit) => {
     let blocks = [];
-    let blockNum = (messageBit.length + 1) / divBlockBit
+    let blockNum = (messageBit.length) / divBlockBit
     let start = 0, end = divBlockBit;
-    for (let i = 0; i < blockNum - 1; i++) {
+    for (let i = 0; i < blockNum; i++) {
+        // console.log(start,end,blockNum);
         blocks[i] = messageBit.slice(start, end)
         start = start + divBlockBit;
         end = end + divBlockBit;
     }
+    // console.log(blockNum);
     let hash = "";
     for (let i = 0; i < blocks.length - 1; i++) {
         if (hash === "") {
