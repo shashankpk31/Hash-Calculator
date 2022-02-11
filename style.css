@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
+div,
+p {
+  color: #babecc;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+button,
+input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+input {
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+input:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+button {
+  color: #61677c;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #D4AF37;
+}
+button:hover {
+    box-shadow: inset 2px 2px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+
+#Calculator {
+  display: flex;
+  flex-direction: column;
+  background: url(./crypto.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  color: #babecc;
+  background-color: rgb(54, 2, 122);
+}
+
+#CalcNavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(15, 41, 190, 0.164);
+  padding: 0.5rem 0rem;
+}
+
+#logo {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+#logo span {
+  font-weight: 600;
+}
+.switches button {
+  padding: 0.4rem 2rem;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  background-color: #D4AF37;
+}
+
+.Calcmain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  padding: 1rem;
+  margin-top: 10rem;
+}
+
+#CalMain2 {
+  display: none;
+}
+
+.CalcBox {
+  background-color: rgb(209, 215, 221);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1rem 0rem;
+  margin: 0rem 7rem;
+}
+.CalcBox input {
+  width: 90%;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.3rem;
+}
+.CalcBox button {
+  width: 90%;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.3rem;
+}
